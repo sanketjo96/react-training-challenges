@@ -1,7 +1,12 @@
 import './App.css';
 import List from './List/List';
 
-const list = ['apple', 'banana', 'jackfruit', 'watermelon']
+const list = [
+  { id: 11, name: 'apple' }, 
+  { id: 14, name: 'banana' }, 
+  { id: 345, name: 'jackfruit' }, 
+  { id: 55, name: 'watermelon' }
+]
 function App() {
   return (
     <div className="App">

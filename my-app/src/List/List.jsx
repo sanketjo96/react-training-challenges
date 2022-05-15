@@ -7,7 +7,7 @@ export default class List extends Component {
       <div>
         { list.map((fruit, index) => {
           return (
-            <div key={fruit}>{index + 1} - {fruit}</div>
+            <div key={fruit.id}>{index + 1} - {fruit.id} - {fruit.name}</div>
           )
         })}
       </div>
