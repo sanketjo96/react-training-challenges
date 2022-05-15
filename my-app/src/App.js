@@ -1,10 +1,10 @@
 import './App.css';
-import Counter from './Counter/Counter';
+import Print from './Props/Print';
 
 function App() {
   return (
     <div className="App">
-      <Counter></Counter>
+      <Print name="React"></Print>
     </div>
   );
 }
