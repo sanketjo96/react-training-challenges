@@ -1,10 +1,11 @@
 import './App.css';
-import Print from './Props/Print';
+import Event from './Events/Event';
+
 
 function App() {
   return (
     <div className="App">
-      <Print name="React"></Print>
+      <Event></Event>
     </div>
   );
 }
