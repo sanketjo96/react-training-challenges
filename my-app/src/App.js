@@ -1,10 +1,11 @@
 import './App.css';
-import Print from './Props/Print';
+import List from './List/List';
 
+const list = ['apple', 'banana', 'jackfruit', 'watermelon']
 function App() {
   return (
     <div className="App">
-      <Print name="React"></Print>
+      <List list={list}></List>
     </div>
   );
 }
