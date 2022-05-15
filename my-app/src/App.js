@@ -1,11 +1,11 @@
 import './App.css';
-import Event from './Events/Event';
+import Parent from './Communication/Parent';
 
 
 function App() {
   return (
     <div className="App">
-      <Event></Event>
+      <Parent></Parent>
     </div>
   );
 }
