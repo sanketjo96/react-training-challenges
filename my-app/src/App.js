@@ -1,10 +1,10 @@
 import './App.css';
-import SampleClass from './Sample/SampleClass';
+import SampleFunc from './Sample/SampleClass';
 
 function App() {
   return (
     <div className="App">
-      <SampleClass></SampleClass>
+      <SampleFunc></SampleFunc>
     </div>
   );
 }
