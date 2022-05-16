@@ -1,10 +1,10 @@
 import './App.css';
-import Print from './Props/Print';
+import StyleComponent from './Styles/StyleComponent';
 
 function App() {
   return (
     <div className="App">
-      <Print name="React"></Print>
+      <StyleComponent></StyleComponent>
     </div>
   );
 }
