@@ -1,10 +1,10 @@
 import './App.css';
-import UpdateClass from './Sample/UpdateClass';
+import Parent from './Sample/Parent';
 
 function App() {
   return (
     <div className="App">
-      <UpdateClass></UpdateClass>
+      <Parent></Parent>
     </div>
   );
 }
