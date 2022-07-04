@@ -14,12 +14,13 @@ export default class MoutingClass extends Component {
         return null
     }
 
+    onInputChange = (e) => {
+        this.setState({label: e.target.value})
+    }
+
     render() {
         console.log('3. Render')
-        
-        // You must need to return something
-        // from component
-        return <span>{this.state.label}</span>
+        return <input value={this.state.label} onChange={this.onInputChange}></input>
     }
 
     componentDidMount() {
