@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class MoutingClass extends Component {
+export default class UpdateClass extends Component {
     constructor() {
         super()
         console.log('1. In constructor')
@@ -16,6 +16,10 @@ export default class MoutingClass extends Component {
 
     onInputChange = (e) => {
         this.setState({label: e.target.value})
+    }
+
+    componentDidUpdate() {
+        console.log('In componentDid Update')
     }
 
     render() {
