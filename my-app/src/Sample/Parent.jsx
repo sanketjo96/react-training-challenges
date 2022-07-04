@@ -10,15 +10,16 @@ export default class Parent extends Component {
     }
 
 
-    onInputChange = (e) => {
-        this.setState({ label: e.target.value })
+    onInputChange = (data) => {
+        this.setState({ label: data })
     }
 
     render() {
         return (
             <>
-                <PureComponentWidget></PureComponentWidget>
-                <input value={this.state.label} onChange={this.onInputChange}></input>
+                <PureComponentWidget name={this.state.label}></PureComponentWidget>
+                <button onClick={() => this.onInputChange('sample')}>SET SAME STATE</button>
+                <button onClick={() => this.onInputChange('new sample')}>SET DIFFRENT STATE</button>
             </>
         )
     }
