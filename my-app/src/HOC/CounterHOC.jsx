@@ -10,7 +10,7 @@ export const Counter = (TargetComponent) => {
         }
 
         setCount = () => {
-            this.setState((Pstate) => ({ count: Pstate.count + 1 }))
+            throw new Error('Custom error!!')
         }
 
 

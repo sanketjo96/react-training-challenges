@@ -1,4 +1,5 @@
 import './App.css';
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 import ClickCounter from './Sample/ClickCounter';
 import HoverCounter from './Sample/HoverCounter';
 
@@ -6,8 +7,10 @@ import HoverCounter from './Sample/HoverCounter';
 function App() {
   return (
     <div className="App">
-      <HoverCounter label={'HoverCounter'}></HoverCounter>
-      <ClickCounter label={'ClickCounter'}></ClickCounter>
+      <ErrorBoundary>
+        <HoverCounter label={'HoverCounter'}></HoverCounter>
+        <ClickCounter label={'ClickCounter'}></ClickCounter>
+      </ErrorBoundary>
     </div>
   );
 }
