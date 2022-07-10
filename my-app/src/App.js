@@ -1,10 +1,13 @@
 import './App.css';
-import InputParent from './Sample/InputParent';
+import ClickCounter from './Sample/ClickCounter';
+import HoverCounter from './Sample/HoverCounter';
+
 
 function App() {
   return (
     <div className="App">
-      <InputParent></InputParent>
+      <HoverCounter label={'HoverCounter'}></HoverCounter>
+      <ClickCounter label={'ClickCounter'}></ClickCounter>
     </div>
   );
 }
