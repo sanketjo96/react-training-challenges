@@ -1,16 +1,10 @@
 import './App.css';
-import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
-import ClickCounter from './Sample/ClickCounter';
-import HoverCounter from './Sample/HoverCounter';
-
+import { GETData } from './Sample/GETData';
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
-        <HoverCounter label={'HoverCounter'}></HoverCounter>
-        <ClickCounter label={'ClickCounter'}></ClickCounter>
-      </ErrorBoundary>
+        <GETData></GETData>
     </div>
   );
 }
