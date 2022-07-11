@@ -1,10 +1,10 @@
 import './App.css';
-import { GETData } from './Sample/GETData';
+import { POSTData } from './Sample/POSTData';
 
 function App() {
   return (
     <div className="App">
-        <GETData></GETData>
+        <POSTData></POSTData>
     </div>
   );
 }

@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-/**
- * 1. Note usdage of https://jsonplaceholder.typicode.com/
- * 2. Note setState under promise success
- * 3. Error handling
- */
-export class GETData extends Component {
+
+export class POSTData extends Component {
     constructor(props) {
         super(props)
 
@@ -27,6 +23,23 @@ export class GETData extends Component {
         })
     }
 
+    updateData = (postToUpdate) => {
+        fetch(`https://jsonplaceholder.typicode.com/posts/${postToUpdate.id}`, {
+            method: 'PUT',
+            body: JSON.stringify({
+              id: postToUpdate.id,
+              title: 'foo',
+              body: 'bar',
+              userId: 1,
+            }),
+            headers: {
+              'Content-type': 'application/json; charset=UTF-8',
+            },
+          })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
+    }
+
     render() {
         return (
             <>
@@ -37,7 +50,11 @@ export class GETData extends Component {
                         ? (
                             <ol>
                                 {this.state.posts.map(post => (
-                                    <li key={post.id}>{post.title}</li>
+                                    <li key={post.id}>
+                                        {post.title}
+                                        <button onClick={() => this.updateData(post)}>Update Data</button>
+                                    </li>
+
                                 ))}
                             </ol>
                         ) 
@@ -48,4 +65,4 @@ export class GETData extends Component {
     }
 }
 
-export default GETData
+export default POSTData
