@@ -1,10 +1,10 @@
 import './App.css';
-import RootWithContext from './Sample/RootWithContext';
+import Container from './Sample/Container';
 
 function App() {
   return (
     <div className="App">
-        <RootWithContext></RootWithContext>
+        <Container></Container>
     </div>
   );
 }
