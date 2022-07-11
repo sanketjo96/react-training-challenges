@@ -1,10 +1,10 @@
 import './App.css';
-import { POSTData } from './Sample/POSTData';
+import Hook from './Sample/Hook';
 
 function App() {
   return (
     <div className="App">
-        <POSTData></POSTData>
+        <Hook></Hook>
     </div>
   );
 }
