@@ -1,10 +1,10 @@
 import './App.css';
-import DataFetch from './Sample/DataFetch';
+import RootWithContext from './Sample/RootWithContext';
 
 function App() {
   return (
     <div className="App">
-        <DataFetch></DataFetch>
+        <RootWithContext></RootWithContext>
     </div>
   );
 }
