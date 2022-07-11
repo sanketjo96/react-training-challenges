@@ -1,10 +1,10 @@
 import './App.css';
-import Hook from './Sample/Hook';
+import FunctionComponent from './Sample/FunctionComponent';
 
 function App() {
   return (
     <div className="App">
-        <Hook></Hook>
+        <FunctionComponent></FunctionComponent>
     </div>
   );
 }
