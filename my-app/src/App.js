@@ -1,10 +1,12 @@
 import './App.css';
-import Container from './Sample/Container';
+import SimpleReducer from './Sample/SimpleReducer';
+import ComplexReducer from './Sample/ComplexReducer';
 
 function App() {
   return (
     <div className="App">
-        <Container></Container>
+        <SimpleReducer></SimpleReducer>
+        <ComplexReducer></ComplexReducer>
     </div>
   );
 }
