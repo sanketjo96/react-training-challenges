@@ -1,10 +1,10 @@
 import './App.css';
-import FunctionComponent from './Sample/FunctionComponent';
+import DataFetch from './Sample/DataFetch';
 
 function App() {
   return (
     <div className="App">
-        <FunctionComponent></FunctionComponent>
+        <DataFetch></DataFetch>
     </div>
   );
 }
